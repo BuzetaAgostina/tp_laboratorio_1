@@ -7,6 +7,7 @@
 
 int main()
 {
+    system("color F1");
     EPersona personas [20];
     char seguir='s';
     int opcion;
@@ -25,6 +26,7 @@ int main()
 
         printf("\n\n Ingrese la opcion deseada: ");
         scanf("%d",&opcion);
+        printf("\n\n");
 
         while(opcion<1 || opcion>5)
         {
@@ -59,12 +61,12 @@ int main()
         }
 
         fflush(stdin);
-        printf("\nDesea continuar? s/n: ");
+        printf("\nDesea salir del programa? s/n: ");
 
         scanf("%c",&seguir);
         seguir=tolower(seguir);
 
-    }while (seguir=='s');
+    }while (seguir=='n');
 
     return 0;
 }

@@ -106,29 +106,29 @@ void grafico(EPersona x[])
      {
          if(i<=menor18)
          {
-             printf("*");
+             printf("%c", 178);
          }
 
          if(i<=entre19y35)
          {
             flag=1;
-            printf("\t*");
+            printf("\t%c", 178);
          }
 
          if(i<=mayorde35)
          {
             if(flag==0)
-            printf("\t\t*");
+            printf("\t\t%c", 178);
 
             if(flag==1)
-            printf("\t*");
+            printf("\t%c", 178);
 
          }
 
         printf("\n");
      }
 
-        printf("\n\n--------------------");
+        printf("--------------------");
         printf("\n<18\t19-35\t 35>\n\n");
 
 }
